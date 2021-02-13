@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rheviu</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="#" />
+    <!-- Inter font -->
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+    <!-- Animate.style CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Rheviu CSS -->
+    <link rel="stylesheet" href="css/rheviu.css">
+</head>
+
+<body>
+    <!-- Main Nav -->
+    <div
+        class="fixed shadow-sm z-50 w-full bg-white animate__animated animate__fadeInDown animate__slow animate__delay-1s">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <!-- Nav Main -->
+            <div
+                class="flex justify-between items-center border-b-2 border-gray-100 py-2 md:justify-start md:space-x-10">
+                <div class="flex justify-start lg:w-0 lg:flex-1">
+                    <a href="/">
+                        <svg class="h-6 w-auto sm:h-6 mt-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path fill="#0054FF"
+                                d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z" />
+                        </svg>
+                    </a>
+                    <div>
+                        <p class="text-2xl font-bold mt-2 mx-3"> Rheviu </p>
+                    </div>
+
+                    <div class="hidden md:flex mt-4 ml-10 space-x-10">
+                        <a href="/" class="text-sm font-medium text-gray-900 hover:text-gray-700">
+                            Inicio
+                        </a>
+                        <a href="#" class="text-sm font-medium text-gray-900 hover:text-gray-700">
+                            Únete
+                        </a>
+                    </div>
+
+                </div>
+                <!-- Nav Right -->
+                <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+                    <a href="#"
+                        class="ml-4 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-blue-600 rounded-md shadow-sm text-sm font-medium text-blue-600 bg-white hover:bg-blue-700">
+                        Danos tu opinión
+                    </a>
+                    <a href="#"
+                        class="ml-4 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700">
+                        Únete al Equipo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Main Nav -->
+    <!-- Main Title -->
+    <div class="rheviu-main-title mx-auto px-4 sm:px-6 lg:px-8 animate__animated animate__fadeInUp animate__slow">
+        <div class="lg:text-center">
+            <h2
+                class="animate__animated animate__fadeInUp animate__delay-1s text-base text-blue-600 font-semibold tracking-wide uppercase">
+                BIENVENIDO A RHEVIU 🎉
+            </h2>
+            <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+                Opina sobre tus cursos favoritos
+            </p>
+            <p
+                class="animate__animated animate__fadeIn animate__delay-1s mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                Encuentra todos tus ramos en un solo lugar, evaluados por tus compañeros en dificultad, tiempo y mucho
+                más!
+            </p>
+            <br class="mt-10 sm:hidden">
+            <br class="mt-10 sm:hidden">
+            <br class="mt-10 sm:hidden">
+            <br class="mt-10 sm:hidden">
+            <div class="items-center mt-5">
+                <a href="#"
+                    class="animate__animated animate__slow animate__fadeInLeft animate__delay-1s whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-blue-600 rounded-md shadow-sm text-sm font-medium text-blue-600 bg-white hover:bg-blue-700">
+                    Danos tu opinión
+                </a>
+                <div class="flex md:hidden">
+                    <br>
+                </div>
+                <a href="#"
+                    class="animate__animated animate__slow animate__fadeInRight animate__delay-1s md:ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700">
+                    Únete al Equipo →
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End Main Title -->
+    <!-- Main Center -->
+    <div
+        class="hidden md:flex max-w-7xl mx-auto justify-center mt-10 animate__animated animate__fadeInUp animate__slow">
+        <div class="z-50 bg-white overflow-hidden sm:rounded-lg rw-80 border border-gray-200 mb-10">
+            <div class="flex justify-center">
+                <section class="mb-5 px-4 sm:px-6 lg:px-4 xl:px-6 pt-4 space-y-4 rw-100">
+                    <!-- Main Center Header -->
+                    <header class="flex items-center justify-between">
+                        <h2 class="text-lg leading-6 font-medium text-black">Cursos</h2>
+                        <button
+                            class="rheviu-shrink hover:bg-light-blue-200 hover:text-light-blue-800 group flex items-center rounded-md bg-light-blue-100 text-light-blue-600 text-sm font-medium px-4 py-2">
+                            <svg class="group-hover:text-light-blue-600 text-light-blue-500 mr-2" width="12" height="20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 5a1 1 0 011 1v3h3a1 1 0 110 2H7v3a1 1 0 11-2 0v-3H2a1 1 0 110-2h3V6a1 1 0 011-1z" />
+                            </svg>
+                            Añadir
+                        </button>
+                    </header>
+                    <form class="relative rheviu-search">
+                        <svg width="20" height="20" fill="currentColor"
+                            class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" />
+                        </svg>
+                        <input
+                            class="ease-700 focus:border-light-blue-500 focus:ring-1 focus:ring-light-blue-500 focus:outline-none w-full text-sm text-black placeholder-gray-500 border border-gray-200 rounded-md py-2 pl-10"
+                            type="text" aria-label="Filtrar cursos" placeholder="Filtra por cursos o parámetros" />
+                    </form>
+                    <!-- Main Center Info -->
+                    <div class="flex flex-col rheviu-shrink">
+                        <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                            <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                                <div class="overflow-hidden border border-gray-200 sm:rounded-lg">
+                                    <table class="min-w-full divide-y divide-gray-200">
+                                        <thead class="bg-gray-50">
+                                            <tr>
+                                                <th scope="col"
+                                                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                    Curso
+                                                </th>
+                                                <th scope="col"
+                                                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                    Nombre
+                                                </th>
+                                                <th scope="col"
+                                                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                    Horario
+                                                </th>
+                                                <th scope="col"
+                                                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                    Estado
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="bg-white divide-y divide-gray-200">
+                                            <tr>
+                                                <td class="px-6 py-4 whitespace-nowrap">
+                                                    <div class="flex items-center">
+                                                        <div>
+                                                            <div class="text-sm font-medium text-gray-900">
+                                                                ING1610
+                                                            </div>
+                                                            <div class="text-sm text-gray-500">
+                                                                Sección 1
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="px-6 py-4 whitespace-nowrap">
+                                                    <div class="text-sm text-gray-900">Cálculo I
+                                                    </div>
+                                                    <div class="text-sm text-gray-500">
+                                                        Facultad de Ingeniería</div>
+                                                </td>
+                                                <td class="px-6 py-4 whitespace-nowrap">
+                                                    <div class="text-sm text-gray-900">CLAS L-W: 3
+                                                    </div>
+                                                    <div class="text-sm text-gray-500">
+                                                        AYU L-W: 4</div>
+                                                </td>
+                                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                                    <span
+                                                        class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                                        Remoto
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Main Center Data-->
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-3 gap-4">
+                        <li>
+                            <div class="rheviu-shrink group block rounded-lg p-4 border border-gray-200">
+                                <div class="grid sm:block lg:grid xl:block grid-cols-2 grid-rows-2 items-center">
+                                    <div class="flex justify-between">
+                                        <p class="text-base text-3xl leading-8 font-semibold text-gray-900">
+                                            8.9
+                                            <span
+                                                class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                                ↑ 3.32%
+                                            </span>
+                                        </p>
+                                        <svg class="flex-shrink-0 h-6 w-6 text-gray-200"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="mt-1 text-sm text-gray-500">
+                                            ¿Cuán difícil es el curso?
+                                        </p>
+                                    </div>
+                                    <div class="col-start-2 row-start-1 row-end-3 mt-2">
+                                        <div class="flex -space-x-1 overflow-hidden">
+                                            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://placekitten.com/300/301" alt="">
+                                            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://placekitten.com/300/302" alt="">
+                                            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://placekitten.com/300/303" alt="">
+                                            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://placekitten.com/300/304" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rheviu-shrink group block rounded-lg p-4 border border-gray-200">
+                                <div class="grid sm:block lg:grid xl:block grid-cols-2 grid-rows-2 items-center">
+                                    <div class="flex justify-between">
+                                        <p class="text-base text-3xl leading-8 font-semibold text-gray-900">
+                                            9.2
+                                            <span
+                                                class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                                ↑ 0.27%
+                                            </span>
+                                        </p>
+                                        <svg class="flex-shrink-0 h-6 w-6 text-gray-200"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="mt-1 text-sm text-gray-500">
+                                            ¿Cuánto tiempo dedica a la semana?
+                                        </p>
+                                    </div>
+                                    <div class="col-start-2 row-start-1 row-end-3 mt-2">
+                                        <div class="flex -space-x-1 overflow-hidden">
+                                            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://placekitten.com/300/305" alt="">
+                                            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://placekitten.com/300/306" alt="">
+                                            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://placekitten.com/300/307" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rheviu-shrink group block rounded-lg p-4 border border-gray-200">
+                                <div class="grid sm:block lg:grid xl:block grid-cols-2 grid-rows-2 items-center">
+                                    <div class="flex justify-between">
+                                        <p class="text-base text-3xl leading-8 font-semibold text-gray-900">
+                                            9.3
+                                            <span
+                                                class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                                ↑ 2.3%
+                                            </span>
+                                        </p>
+                                        <svg class="flex-shrink-0 h-6 w-6 text-gray-200"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="mt-1 text-sm text-gray-500">
+                                            ¿Cómo es el equipo docente?
+                                        </p>
+                                    </div>
+                                    <div class="col-start-2 row-start-1 row-end-3 mt-2">
+                                        <div class="flex -space-x-1 overflow-hidden">
+                                            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://placekitten.com/300/308" alt="">
+                                            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://placekitten.com/300/309" alt="">
+                                            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://placekitten.com/300/310" alt="">
+                                            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://placekitten.com/300/311" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rheviu-shrink group block rounded-lg p-4 border border-gray-200">
+                                <div class="grid sm:block lg:grid xl:block grid-cols-2 grid-rows-2 items-center">
+                                    <div class="flex justify-between">
+                                        <p class="text-base text-3xl leading-8 font-semibold text-gray-900">
+                                            7.0
+                                            <span
+                                                class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                                ↑ 0.00%
+                                            </span>
+                                        </p>
+                                        <svg class="flex-shrink-0 h-6 w-6 text-gray-200"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="mt-1 text-sm text-gray-500">
+                                            ¿Cómo es el equipo de ayudantes?
+                                        </p>
+                                    </div>
+                                    <div class="col-start-2 row-start-1 row-end-3 mt-2">
+                                        <div class="flex -space-x-1 overflow-hidden">
+                                            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://placekitten.com/300/312" alt="">
+                                            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://placekitten.com/300/313" alt="">
+                                            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://placekitten.com/300/314" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rheviu-shrink group block rounded-lg p-4 border border-gray-200">
+                                <div class="grid sm:block lg:grid xl:block grid-cols-2 grid-rows-2 items-center">
+                                    <div class="flex justify-between">
+                                        <p class="text-base text-3xl leading-8 font-semibold text-gray-900">
+                                            9.9
+                                            <span
+                                                class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                                                ↑ 8.94%
+                                            </span>
+                                        </p>
+                                        <svg class="flex-shrink-0 h-6 w-6 text-gray-200"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="mt-1 text-sm text-gray-500">
+                                            ¿Cuánto aprendizaje se obtiene?
+                                        </p>
+                                    </div>
+                                    <div class="col-start-2 row-start-1 row-end-3 mt-2">
+                                        <div class="flex -space-x-1 overflow-hidden">
+                                            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://placekitten.com/300/315" alt="">
+                                            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://placekitten.com/300/316" alt="">
+                                            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://placekitten.com/300/317" alt="">
+                                            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://placekitten.com/300/318" alt="">
+                                            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                                src="https://placekitten.com/300/319" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flex rounded-lg">
+                            <a href="#"
+                                class="rheviu-shrink w-full flex items-center justify-center rounded-lg border-2 border-dashed border-gray-200 text-sm font-medium py-4">
+                                Nuevo Rheviu
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Main Center Comments -->
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr>
+                                <td class="whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <div>
+                                            <div class="text-sm font-medium text-gray-900">
+                                                Diego
+                                            </div>
+                                            <div class="text-sm text-gray-500">
+                                                Hace 30 min.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="text-sm text-gray-900">
+                                        ¿Cuanto tiempo toma estudiar para la I1?
+                                    </div>
+                                    <div class="text-sm text-gray-500">
+                                        Hola a todos! Estoy planeando estudiar para la I1 con tiempo, por lo que queria
+                                        saber cuantos dias tengo que dedicar en la par ...
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <div>
+                                            <div class="text-sm font-medium text-gray-900">
+                                                Josefa
+                                            </div>
+                                            <div class="text-sm text-gray-500">
+                                                Hace 1 hr.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="text-sm text-gray-900">
+                                        ¿Es nescesario tomarlo al mismo tiempo que algebra lineal?
+                                    </div>
+                                    <div class="text-sm text-gray-500">
+                                        Recuerdo haber leido que eran co-requisitos entre si, pero no me quedo muy
+                                        claro :/
+                                        Hay algun ayudante de C1 que me pueda ...
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <div>
+                                            <div class="text-sm font-medium text-gray-900">
+                                                Martina
+                                            </div>
+                                            <div class="text-sm text-gray-500">
+                                                Hace 1 hr.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="text-sm text-gray-900">
+                                        ¿Que entra en los laboratorios usualmente?, ¿Me pueden dar tips para estudiar /
+                                        hacer los labs?
+                                    </div>
+                                    <div class="text-sm text-gray-500">
+                                        Alguien tiene una guia de los contenidos que se preguntan en los laboratorios, y
+                                        en que plataforma o lenguaje se hacen las tar ...
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="rheviu-shrink mt-5text-sm">
+                        <a href="#" class="font-medium text-blue-600 hover:text-blue-500"> Ver todas las preguntas <span
+                                aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- End Main Center -->
+    <!-- Main Footer -->
+    <div
+        class="bg-blue-900 flex mx-auto justify-center mt-10 py-10 animate__animated animate__fadeInUp animate__delay-1s">
+        <div class="flex flex-col rw-70">
+            <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                    <div class="overflow-hidden sm:rounded-lg">
+                        <table class="min-w-full">
+                            <thead>
+                                <tr>
+                                    <th scope="col"
+                                        class="px-6 text-left text-base font-medium text-white uppercase tracking-wider">
+                                        <svg class="h-8 w-auto sm:h-5" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20">
+                                            <path fill="#FFFFFF"
+                                                d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z" />
+                                        </svg>
+                                    </th>
+                                    <th scope="col"
+                                        class=" px-6 text-left text-base font-medium text-white uppercase tracking-wider">
+                                        Nosotros
+                                    </th>
+                                    <th scope="col"
+                                        class=" px-6 text-left text-base font-medium text-white uppercase tracking-wider">
+                                        Redes Sociales
+                                    </th>
+                                    <th scope="col"
+                                        class=" px-6 text-left text-base font-medium text-white uppercase tracking-wider">
+                                        Contacto
+                                    </th>
+                                    <th scope="col"
+                                        class=" px-6 text-left text-base font-medium text-white uppercase tracking-wider">
+                                        Términos
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="px-6 py-2 whitespace-nowrap text-sm text-gray-300">
+                                        Rheviu - ¡Los alumnos ponen notas!
+                                    </td>
+                                    <td class=" px-6 py-2 whitespace-nowrap text-sm text-gray-300">
+                                        <a href="#" class="text-base font-medium text-gray-300 hover:text-white">
+                                            Equipo
+                                        </a>
+                                    </td>
+                                    <td class=" px-6 py-2 whitespace-nowrap text-sm text-gray-300">
+                                        <a href="#" class="text-base font-medium text-gray-300 hover:text-white">
+                                            Instagram
+                                        </a>
+                                    </td>
+                                    <td class="px-6 py-2 whitespace-nowrap text-sm text-gray-300">
+                                        <a href="#" class="text-base font-medium text-gray-300 hover:text-white">
+                                            Email
+                                        </a>
+                                    </td>
+                                    <td class="px-6 py-2 whitespace-nowrap text-sm text-gray-300">
+                                        <a href="#" class="text-base font-medium text-gray-300 hover:text-white">
+                                            Términos y Condiciones
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-2 whitespace-nowrap text-sm text-gray-300">
+                                    </td>
+                                    <td class="px-6 py-2 whitespace-nowrap text-sm text-gray-300">
+                                    </td>
+                                    <td class="px-6 py-2 whitespace-nowrap text-sm text-gray-300">
+                                        <a href="#" class="text-base font-medium text-gray-300 hover:text-white">
+                                            Twitter
+                                        </a>
+                                    </td>
+                                    <td class="px-6 py-2 whitespace-nowrap text-sm text-gray-300">
+                                        <a href="#" class="text-base font-medium text-gray-300 hover:text-white">
+
+                                        </a>
+                                    </td>
+                                    <td class="px-6 py-2 whitespace-nowrap text-sm text-gray-300">
+                                        <a href="#" class="text-base font-medium text-gray-300 hover:text-white">
+                                            Política de Privacidad
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-2 whitespace-nowrap text-sm text-gray-300">
+                                        <div class="text-base">
+                                            <a href="#"><i class="bi bi-github"></i></a>
+                                            <a href="#"><i class="bi bi-twitter"></i></a>
+                                            <a href="#"><i class="bi bi-instagram"></i></a>
+                                            <a href="#"><i class="bi bi-facebook"></i></a>
+                                        </div>
+                                    </td>
+                                    <td class=" px-6 py-2 whitespace-nowrap text-sm text-gray-300">
+                                    </td>
+                                    <td class=" px-6 py-2 whitespace-nowrap text-sm text-gray-300">
+                                        <a href="#" class="text-base font-medium text-gray-300 hover:text-white">
+                                            Facebook
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Main Footer -->
+</body>
+
+</html>

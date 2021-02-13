@@ -1,0 +1,103 @@
+body {
+    font-family: "inter";
+    overflow-x: hidden;
+}
+
+.rw-10 {
+    width: 10%;
+}
+
+.rw-20 {
+    width: 20%;
+}
+
+.rw-30 {
+    width: 30%;
+}
+
+.rw-40 {
+    width: 40%;
+}
+
+.rw-50 {
+    width: 50%;
+}
+
+.rw-60 {
+    width: 60%;
+}
+
+.rw-70 {
+    width: 70%;
+}
+
+.rw-80 {
+    width: 80%;
+}
+
+.rw-90 {
+    width: 90%;
+}
+
+.rw-100 {
+    width: 100%;
+}
+
+/* Sets interactions */
+
+.ease-700 {
+    transition: ease 700ms;
+}
+
+/* Main title */
+
+.rheviu-main-title {
+    padding-top: 140px;
+    padding-bottom: 40px;
+}
+
+/* Interacts rheviu-shrink */
+
+.rheviu-shrink {
+    transition: ease 700ms;
+}
+
+.rheviu-shrink span {
+    transition: ease 700ms;
+}
+
+.rheviu-shrink img {
+    transition: ease 700ms;
+}
+
+.rheviu-shrink:hover {
+    border-radius: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.rheviu-shrink:hover span {
+    margin-left: 10px;
+}
+
+.rheviu-shrink:hover img {
+    margin-left: 10px;
+}
+
+/* Animates rheviu-search */
+
+.rheviu-search:hover input {
+    border-radius: 50px;
+}
+
+/* Animates rheviu-btn */
+
+.rheviu-btn:hover {
+    border-radius: 20px;
+}
+
+/* Custom bg-blue-900 color */
+
+.bg-blue-900 {
+    background-color: #03112C;
+}
